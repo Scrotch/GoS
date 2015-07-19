@@ -15,6 +15,7 @@ function AfterObjectLoopEvent(myHero)
     end
 	
 		if KeyIsDown(0x20) then
+			IWalk()
 			local unit = GetTarget(2500)
 				if ValidTarget(unit, 2500) then 
 				local QPred = GetPredictionForPlayer(GetMyHeroPos(),unit,GetMoveSpeed(unit),500,250,875,160,false,true)
@@ -34,9 +35,9 @@ function AfterObjectLoopEvent(myHero)
 				if CanUseSpell(myHero, _W) == READY and IsInDistance(unit, 1000) and QPred.HitChance == 1 then
 				CastSkillShot(_W,WPred.PredPos.x,WPred.PredPos.y,WPred.PredPos.z)
 				end
-				IWalk()
 				end
 	end
+
 	RDamage = (RBaseDmg[GetCastLevel(myHero,_R)+1]+(GetBonusAP(myHero)/100)*60)
 	if CanUseSpell(myHero, _R) == READY then
 	KillableEnemiesWithUlt = 0
