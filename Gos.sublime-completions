@@ -7,6 +7,27 @@
 		{ "trigger": "OnLoop", "contents": "OnLoop(function(${1:myHero})" },
 		{ "trigger": "OnObjectLoop", "contents": "OnObjectLoop(function(${1:Object}, ${2:myHero})" },
 		{ "trigger": "OnProcessSpell", "contents": "OnProcessSpell(function(${1:object}, ${2:spellProc})" },
+		{ "trigger": "OnDrawMinimap", "contents": "OnDrawMinimap(function()" },
+		{ "trigger": "OnProcessRecall", "contents": "OnProcessRecall(function(${1:Object}, ${2:recallProc})" },
+		{ "trigger": "PrintChat", "contents": "PrintChat(${1:text})" },
+		{ "trigger": "CastSpell", "contents": "CastSpell(${1:Spell})" },
+		{ "trigger": "CastSkillShot2", "contents": "CastSkillShot2(${1:Spell}, ${2:x}, ${3:y}, ${4:z})" },
+		{ "trigger": "ARGB", "contents": "ARGB(${1:255}, ${2:255}, ${3:255}, ${4:255})" },
+		{ "trigger": "WorldToMinimap", "contents": "WorldToMinimap(${1:Origin})" },
+		{ "trigger": "LevelSpell", "contents": "LevelSpell(${1:Spell})" },
+		{ "trigger": "CastSkillShot3", "contents": "CastSkillShot3(${1:Spell}, ${2:startpos}, ${3:endpos})" },
+		{ "trigger": "IsTargetable", "contents": "IsTargetable(${1:Object})" },
+
+		{ "trigger": "OnUpdateBuff", "contents": "OnUpdateBuff(function(${1:Object}, ${2:BuffName}, ${3:Stacks})" },
+		{ "trigger": "OnRemoveBuff", "contents": "OnRemoveBuff(function(${1:Object}, ${2:BuffName})" },
+		{ "trigger": "OnCreateObj", "contents": "OnCreateObj(function(${1:Object})" },
+		{ "trigger": "OnDeleteObj", "contents": "OnDeleteObj(function(${1:Object})" },
+
+		{ "trigger": "GetMapID", "contents": "GetMapID()" },
+		{ "trigger": "GetBaseAttackSpeed", "contents": "GetBaseAttackSpeed(${1:Object})" },
+
+		{ "trigger": "OnProcessWaypoint", "contents": "OnProcessWaypoint(function(${1:Object}, ${2:waypointProc})" },
+
 		{ "trigger": "GetObjectType", "contents": "GetObjectType(${1:Object})" },
 		{ "trigger": "GetObjectName", "contents": "GetObjectName(${1:Object})" },
 		{ "trigger": "GetObjectBaseName", "contents": "GetObjectBaseName(${1:Object})" },
@@ -90,9 +111,17 @@
 		"Obj_AI_LineMissle",
 		"Obj_AI_Shop",
 
+		"CRYSTAL_SCAR",
+		"TWISTED_TREELINE",
+		"SUMMONERS_RIFT",
+		"HOWLING_ABYSS",
+		"RECALL",
+
 		".x",
 		".y",
 		".z",
+		".index",
+		".position",
 		".HitChance",
 
 	]
